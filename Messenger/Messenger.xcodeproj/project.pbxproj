@@ -10,6 +10,7 @@
 		FF31451A20AC29C400572FB0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31451920AC29C400572FB0 /* main.swift */; };
 		FF3895A220AC45DC00DEFFD2 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3895A120AC45DC00DEFFD2 /* Chat.swift */; };
 		FF6391BA20AC39D30080DFBA /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6391B920AC39D30080DFBA /* Profile.swift */; };
+		FF6391BC20AC44450080DFBA /* profileopret.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6391BB20AC44450080DFBA /* profileopret.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		FF31451920AC29C400572FB0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FF3895A120AC45DC00DEFFD2 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		FF6391B920AC39D30080DFBA /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FF6391BB20AC44450080DFBA /* profileopret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileopret.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				FF31451920AC29C400572FB0 /* main.swift */,
 				FF6391B920AC39D30080DFBA /* Profile.swift */,
 				FF3895A120AC45DC00DEFFD2 /* Chat.swift */,
+				FF6391BB20AC44450080DFBA /* profileopret.swift */,
 			);
 			path = Messenger;
 			sourceTree = "<group>";
