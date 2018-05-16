@@ -21,9 +21,31 @@ class chat {
     var sentMessages : [String?]  = [""]
     var recievedMessages : [String?]  = [""]
     
+// ----------------------------------------------
+    
+    func sendImage(){
+    }
+    func uploadImage(){
+    }
+    func addNickname(){
+    }
+    func uploadImport(){
+    }
+    func sendImport(){
+    }
+    
 }
 
 class groupChat : chat {
+    var members : [String?] = [""]
     
 }
+
+
+
+
+
+
+
+
 
