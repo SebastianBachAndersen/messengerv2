@@ -1,6 +1,7 @@
 import Foundation
 
-class friendList {
+class friendLists {
+    var friendsList = ulrik.friendList
     
 }
 
