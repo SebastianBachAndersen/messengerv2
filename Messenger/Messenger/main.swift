@@ -7,3 +7,6 @@
 //
 
 
+let profileopret = Profileopret(password : "blah", mail : "hej")
+
+profileopret.signUpOrLogin()

@@ -30,5 +30,6 @@ class Profile{
     
 }
 
-var ulrik = Profile(name: "Ulrik Magnusson", age: 20, dateOfBrith: "07/08/1997", relationsshipStatus: "Gay", eMail: "mineløgerikkefaldetnedendnu@gaymail.cum", friendList: <#T##Array<String>#>, chat: <#T##Array<String>#>, chatList: <#T##Array<String>#>)
+var ulrik = Profile(name: "Ulrik Magnusson", age: 20, dateOfBrith: "07/08/1997", relationsshipStatus: "Gay", eMail: "mineløgerikkefaldetnedendnu@gaymail.cum", friendList: [], chat: [], chatList: [])
+
 
