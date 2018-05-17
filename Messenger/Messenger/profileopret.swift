@@ -47,7 +47,8 @@ class Profileopret{
                 print("email is correct")
                 if password == i.password{
                     print("You have access")
-                    profilePage() //TODO
+                    let currentUser = i
+                    profilePage(bruger: currentUser) //TODO
                     break
                 }else{
                     print("password wrong")
@@ -86,8 +87,8 @@ class Profileopret{
     
     }
     
-    func profilePage(){
-        print()
+    func profilePage(bruger: Profile){
+        print(bruger.name)
     }
 }
 
