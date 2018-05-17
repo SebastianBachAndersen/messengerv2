@@ -7,6 +7,9 @@
 //
 
 
-let profileopret = Profileopret(password : "blah", mail : "hej")
+// let profileopret = Profileopret(password : "blah", mail : "hej")
+// profileopret.signUpOrLogin()
 
-profileopret.signUpOrLogin()
+
+let chat = Chat(chatName: "john")
+chat.SendMessage()
