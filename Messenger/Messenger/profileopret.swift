@@ -42,11 +42,26 @@ class Profileopret{
         let emailForLogin = readLine()
         print("Enter password")
         let password = readLine()
-        
-
-        
-        
-        
+        for i in brugere {
+            if emailForLogin == i.eMail{
+                print("email is correct")
+                if password == i.password{
+                    print("You have access")
+                    profilePage() //TODO
+                    break
+                }else{
+                    print("password wrong")
+                    login()
+                    break
+                }
+            }else{
+                print("Email wrong")
+                login()
+                break
+                
+            }
+            
+        }
     }
 
     func createUser(){
@@ -61,12 +76,18 @@ class Profileopret{
         let relationsshipStatusForProfile = readLine()
         print("write e-mail")
         let emailForProfile = readLine()
+        print("Write password")
+        let passwordForProfile = readLine()
         
     
             
-        var _ = Profile(name: nameForProfile!, age: Int(ageForProfile!)!, dateOfBrith: (dateOfBrithForProfile)!, relationsshipStatus: (relationsshipStatusForProfile)!, eMail: (emailForProfile)!, friendList: [], chat: [], chatList: [])
+        var _ = Profile(name: nameForProfile!, age: Int(ageForProfile!)!, dateOfBrith: (dateOfBrithForProfile)!, relationsshipStatus: (relationsshipStatusForProfile)!, eMail: (emailForProfile)!, friendList: [], chat: [], chatList: [], password : passwordForProfile!)
             
     
+    }
+    
+    func profilePage(){
+        print()
     }
 }
 
