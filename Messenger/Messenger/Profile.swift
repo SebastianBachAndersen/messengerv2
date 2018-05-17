@@ -27,9 +27,13 @@ class Profile{
         self.chat = chat
         self.chatList = chatList
     }
+<<<<<<< Updated upstream
     
 }
 
 var ulrik = Profile(name: "Ulrik Magnusson", age: 20, dateOfBrith: "07/08/1997", relationsshipStatus: "Gay", eMail: "mineløgerikkefaldetnedendnu@gaymail.cum", friendList: [], chat: [], chatList: [])
 
+=======
+>>>>>>> Stashed changes
 
+}
