@@ -10,7 +10,7 @@ import Foundation
 
 var Messages : [String?]  = [""]
 
-class chat {
+class Chat {
     
     let chatName : String
     
@@ -23,23 +23,29 @@ class chat {
     
 // ----------------------------------------------
     
-    func sendImage(){
+    func SendMessage() {
+        print("Type a message to send!")
+        let messageSent = readLine()
+        recievedMessages.append(messageSent)
     }
-    func uploadImage(){
+    func SendImage(){
     }
-    func addNickname(){
+    func UploadImage(){
     }
-    func uploadImport(){
+    func AddNickname(){
     }
-    func sendImport(){
+    func UploadImport(){
+    }
+    func SendImport(){
     }
     
 }
 
-class groupChat : chat {
+class GroupChat : Chat {
     var members : [String?] = [""]
     
 }
+
 
 
 

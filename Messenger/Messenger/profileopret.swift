@@ -23,8 +23,7 @@ class Profileopret{
         func agian(){
             switch response {
             case "1"?:
-                //login() todo
-                print("faggot")
+                login()
             case "2"?:
                 askeUser()
                 
@@ -37,6 +36,15 @@ class Profileopret{
             }
         }
         agian()
+    }
+    func login(){
+        print("Enter email")
+        let emailForLogin = readLine()
+        print("Enter password")
+        let password = readLine()
+        
+        
+            
     }
 
     func askeUser(){
