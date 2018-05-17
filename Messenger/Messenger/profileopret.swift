@@ -25,7 +25,7 @@ class Profileopret{
             case "1"?:
                 login()
             case "2"?:
-                askeUser()
+                createUser()
                 
             default:
                 print("+--------------+")
@@ -43,11 +43,13 @@ class Profileopret{
         print("Enter password")
         let password = readLine()
         
+
         
-            
+        
+        
     }
 
-    func askeUser(){
+    func createUser(){
         
         print("write name")
         let nameForProfile = readLine()
