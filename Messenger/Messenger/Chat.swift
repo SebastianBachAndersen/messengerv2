@@ -18,14 +18,54 @@ class Chat {
     self.chatName = chatName
     }
     var string = ""
-    var Messages : [String?]  = ["adis", "bolia", "fakker"]
+
     
 // -----------------------------------------------------------------------
     
     func SendMessage() {
-        print("Type a message to send!")
-        let messageSent = readLine()
-        /*X User.*/Messages.append(messageSent)
+        
+        
+        print("+-----------------------------------------------------+")
+        print("+- Choose A User To Which You Want To Send A Message -+")
+        print("+-----------------------------------------------------+")
+        
+        print("+-------------------------+")
+        print("+- Press 1 for Ulrik -----+")
+        print("+- Press 2 for Benjamin --+")
+        print("+- Press 3 for Sebastian -+")
+        print("+- Press 0 to exit -------+")
+        print("+-------------------------+")
+        
+        let chooseDestination = readLine()
+        
+        switch chooseDestination {
+            
+        case "0"?:
+            print("Exiting")
+            
+        case "1"?:
+            print("Type a message to send!")
+            let messageSent = readLine()
+            brugere[0].chat.append(messageSent!)
+            
+        case "2"?:
+            print("Type a message to send!")
+            let messageSent = readLine()
+            brugere[1].chat.append(messageSent!)
+            
+        case "3"?:
+            print("Type a message to send!")
+            let messageSent = readLine()
+            brugere[2].chat.append(messageSent!)
+            
+        default:
+            print("You have to choose a User")
+        }
+        
+        
+        
+        
+        
     }
     func SendImage(){
     }
@@ -38,14 +78,46 @@ class Chat {
     func SendImport(){
     }
     func RetrieveMessages() {
-        for i in Messages{
-            string += i!
-            print(string)
+        
+        print("+-----------------+")
+        print("+- Choose A User -+")
+        print("+-----------------+")
+        
+        print("+-------------------------+")
+        print("+- Press 1 for Ulrik -----+")
+        print("+- Press 2 for Benjamin --+")
+        print("+- Press 3 for Sebastian -+")
+        print("+- Press 0 to exit -------+")
+        print("+-------------------------+")
+        
+        let chooseUser = readLine()
+        
+        switch chooseUser {
+            
+        case "0"?:
+            print("Exiting")
+            
+        case "1"?:
+            print(brugere[0].chat.count-10)
+            
+        case "2"?:
+            print(brugere[1].chat.count-10)
+            
+        case "3"?:
+            print(brugere[2].chat.count-10)
+            
+        default:
+            print("You have to choose a User")
+        }
+        
+        
+     //    for i in brugere {
+            
             
         }
     }
     
-}
+
 
 class GroupChat : Chat {
     var members : [String?] = [""]
