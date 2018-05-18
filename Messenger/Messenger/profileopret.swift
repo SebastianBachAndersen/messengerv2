@@ -17,7 +17,7 @@ class Profileopret{
         
     }
     func signUpOrLogin(){
-        print("do you want to login or signup press: 1 for login press: 2 for signup")
+        print("press: 1 for login press: 2 for signup")
         var response = readLine()
         
         func agian(){
@@ -26,7 +26,6 @@ class Profileopret{
                 login()
             case "2"?:
                 createUser()
-                
             default:
                 print("+--------------+")
                 print("| press 1 or 2 |")
@@ -48,20 +47,14 @@ class Profileopret{
                 if password == i.password{
                     print("You have access")
                     let currentUser = i
-                    profilePage(bruger: currentUser) //TODO
+                    
                     break
                 }else{
                     print("password wrong")
                     login()
                     break
                 }
-            }else{
-                print("Email wrong")
-                login()
-                break
-                
             }
-            
         }
     }
 
@@ -82,13 +75,15 @@ class Profileopret{
         
     
             
-        var _ = Profile(name: nameForProfile!, age: Int(ageForProfile!)!, dateOfBrith: (dateOfBrithForProfile)!, relationsshipStatus: (relationsshipStatusForProfile)!, eMail: (emailForProfile)!, friendList: [], chat: [], chatList: [], password : passwordForProfile!)
-            
-    
+        let addProfile = Profile(name: nameForProfile!, age: Int(ageForProfile!)!, dateOfBrith: dateOfBrithForProfile!, relationsshipStatus: relationsshipStatusForProfile!, eMail: emailForProfile!, friendList: [], chat: [], chatList: [], password : passwordForProfile!)
+        
+        brugere.append(addProfile)
+        
+        print(brugere[3].name)
+        
+        login()
+        
     }
     
-    func profilePage(bruger: Profile){
-        print(bruger.name)
-    }
 }
 
