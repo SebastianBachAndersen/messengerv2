@@ -40,5 +40,3 @@ var sebastian = Profile(name: "Sebastian Andersen", age: 17, dateOfBrith: "13/08
 
 
 var brugere: Array<Profile> = [ulrik, benjamin, sebastian]
-
-
