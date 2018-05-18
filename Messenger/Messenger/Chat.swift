@@ -17,16 +17,15 @@ class Chat {
     init(chatName : String){
     self.chatName = chatName
     }
+    var string = ""
+    var Messages : [String?]  = ["adis", "bolia", "fakker"]
     
-    var sentMessages : [String?]  = [""]
-    var recievedMessages : [String?]  = [""]
-    
-// ----------------------------------------------
+// -----------------------------------------------------------------------
     
     func SendMessage() {
         print("Type a message to send!")
         let messageSent = readLine()
-        recievedMessages.append(messageSent)
+        /*X User.*/Messages.append(messageSent)
     }
     func SendImage(){
     }
@@ -37,6 +36,13 @@ class Chat {
     func UploadImport(){
     }
     func SendImport(){
+    }
+    func RetrieveMessages() {
+        for i in Messages{
+            string += i!
+            print(string)
+            
+        }
     }
     
 }
