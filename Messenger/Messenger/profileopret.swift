@@ -17,7 +17,7 @@ class Profileopret{
         
     }
     func signUpOrLogin(){
-        print("do you want to login or signup press: 1 for login press: 2 for signup")
+        print("press: 1 for login press: 2 for signup press: 3 add friend")
         var response = readLine()
         
         func agian(){
@@ -26,7 +26,8 @@ class Profileopret{
                 login()
             case "2"?:
                 createUser()
-                
+            case "3"?:
+                friendsList()
             default:
                 print("+--------------+")
                 print("| press 1 or 2 |")
