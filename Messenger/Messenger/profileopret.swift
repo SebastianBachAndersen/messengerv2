@@ -49,20 +49,14 @@ class Profileopret{
                 if password == i.password{
                     print("You have access")
                     let currentUser = i
-                    profilePage(bruger: currentUser) //TODO
+                    
                     break
                 }else{
                     print("password wrong")
                     login()
                     break
                 }
-            }else{
-                print("Email wrong")
-                login()
-                break
-                
             }
-            
         }
     }
 
@@ -83,18 +77,14 @@ class Profileopret{
         
     
             
-        let addProfile = Profile(name: nameForProfile!, age: Int(ageForProfile!)!, dateOfBrith: (dateOfBrithForProfile)!, relationsshipStatus: (relationsshipStatusForProfile)!, eMail: (emailForProfile)!, friendList: [], chat: [], chatList: [], password : passwordForProfile!)
+        let addProfile = Profile(name: nameForProfile!, age: Int(ageForProfile!)!, dateOfBrith: dateOfBrithForProfile!, relationsshipStatus: relationsshipStatusForProfile!, eMail: emailForProfile!, friendList: [], chat: [], chatList: [], password : passwordForProfile!)
         
         brugere.append(addProfile)
         
-        print(addProfile.name)
+        print(brugere[3].name)
         
         login()
         
-    }
-    
-    func profilePage(bruger: Profile){
-        print(bruger.name)
     }
     
 }
