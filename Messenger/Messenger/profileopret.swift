@@ -82,13 +82,19 @@ class Profileopret{
         
     
             
-        var _ = Profile(name: nameForProfile!, age: Int(ageForProfile!)!, dateOfBrith: (dateOfBrithForProfile)!, relationsshipStatus: (relationsshipStatusForProfile)!, eMail: (emailForProfile)!, friendList: [], chat: [], chatList: [], password : passwordForProfile!)
-            
-    
+        let addProfile = Profile(name: nameForProfile!, age: Int(ageForProfile!)!, dateOfBrith: (dateOfBrithForProfile)!, relationsshipStatus: (relationsshipStatusForProfile)!, eMail: (emailForProfile)!, friendList: [], chat: [], chatList: [], password : passwordForProfile!)
+        
+        brugere.append(addProfile)
+        
+        print(addProfile.name)
+        
+        login()
+        
     }
     
     func profilePage(bruger: Profile){
         print(bruger.name)
     }
+    
 }
 
