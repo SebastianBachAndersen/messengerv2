@@ -11,5 +11,6 @@
  profileopret.signUpOrLogin()
 
 
-//let chat = Chat(chatName: "john")
-//chat.SendMessage()
+let chat = Chat(chatName: "john")
+chat.SendMessage()
+chat.RetrieveMessages()
